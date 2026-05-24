@@ -1,0 +1,19 @@
+import sys
+import os
+
+# Add the parent directory (backend) to the sys.path to allow importing from ml
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
+try:
+    from ml.predict import predict_aqi_risk
+    print("Successfully imported predict_aqi_risk from ml.predict")
+except ImportError as e:
+    print(f"Import Error: {e}")
+    sys.exit(1)
+
+# Main logic for update_live goes here...
+if __name__ == "__main__":
+    print("Running update_live script...")
+    # Example usage:
+    # result = predict_aqi_risk(...)
+    # print(result)
