@@ -103,7 +103,7 @@ smmap==5.0.2
 SQLAlchemy==2.0.46
 stable_baselines3==2.7.1
 starlette==0.52.1
-streamlit==1.35.0
+
 sympy==1.14.0
 tenacity==8.5.0
 threadpoolctl==3.6.0
